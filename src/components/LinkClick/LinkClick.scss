@@ -1,0 +1,33 @@
+$primary-color: rgb(188, 188, 188);
+
+.container_link {
+  color: $primary-color;
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  padding-left: 2rem;
+  height: 3rem;
+  gap: 5px;
+  .Icon_link {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Text_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin: 0;
+    }
+  }
+
+  &:hover {
+    background-color: #2daecb;
+    color: #f5ffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+  }
+}
