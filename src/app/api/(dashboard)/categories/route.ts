@@ -62,7 +62,7 @@ export const POST = async (request: Request) => {
         const userId = searchParams.get("userId")
         const { title } = await request.json() // parse body respone become a json form, get title in body json
 
-        if(!userId || !Types.ObjectId.isValid("userId")){
+        if(!userId || !Types.ObjectId.isValid(userId)){
             return new NextResponse(
                 JSON.stringify({message:"userId is invalid, how dare you"}),
                 {status:400}
