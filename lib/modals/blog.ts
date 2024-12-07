@@ -3,7 +3,7 @@ import { Schema, model, models } from "mongoose";
 const BlogSchema = new Schema(
   {
     title: { type: "string", require: true },
-    desciption: { type: "string" },
+    description: { type: "string" },
     user: { type: Schema.Types.ObjectId, ref: "user" },
     category: { type: Schema.Types.ObjectId, ref: "category" },
   },

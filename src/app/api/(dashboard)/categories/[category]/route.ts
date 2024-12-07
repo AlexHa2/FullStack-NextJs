@@ -51,11 +51,11 @@ export const PATCH = async (request: Request, context: { params: any }) => {
       {
         $set: {
           title: title,
-          new: true,
         },
       }
     );
 
+   
     if (!updateCategory) {
       return new NextResponse(
         JSON.stringify({
